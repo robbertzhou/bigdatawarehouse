@@ -1,6 +1,7 @@
 package chapter04;
 
 
+import org.apache.flume.Context;
 import org.apache.flume.Event;
 import org.apache.flume.interceptor.Interceptor;
 
@@ -51,5 +52,18 @@ public class LogETLInterceptor implements Interceptor {
     @Override
     public void close() {
 
+    }
+
+    public static class Builder implements Interceptor.Builder{
+
+        @Override
+        public Interceptor build() {
+            return new LogETLInterceptor();
+        }
+
+        @Override
+        public void configure(Context context) {
+
+        }
     }
 }

@@ -5,7 +5,7 @@ import org.apache.commons.lang.math.NumberUtils;
 /**
  * create 2020-11-08
  * author 周宇
- * desc flume日志过滤工具类
+ * desc flume日志过滤工具类 Jlack1234 
  */
 public class LogUtils {
     public static boolean validateEvent(String log){
